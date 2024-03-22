@@ -1,0 +1,287 @@
+%-------------------------
+% Resume in Latex
+% Author : Lev Saunders
+% Based off of template from Gennadii Chursov: https://github.com/sb2nov/resume and https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{tasks}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage{uarial}
+
+\usepackage{times}
+
+% \renewcommand{\rmdefault}{ua1}
+% \renewcommand{\sfdefault}{ua1}
+
+
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeEducationSubheading}[6]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+        \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+        \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+        
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+        \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Lev Saunders} \\ \vspace{1pt}
+    % \small \textit{$Engineer$} \\
+    215-479-0537 \\
+    \href{mailto:levsau00@gmail.com}{\underline{levsau00@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/levsaunders}{\underline{linkedin.com/in/levsaunders/}} $|$
+    \href{https://github.com/levsau00}{\underline{github.com/levsau00}}
+\end{center}
+
+% %-----------SUMMARY-----------
+% \section*{Summary}
+% Results-oriented and detail-driven Automation Quality Engineer with a strong background in Java programming and a passion for ensuring software reliability. Experienced in designing, implementing, and executing automated test scripts to verify the functionality and performance of software applications. Proven track record of collaborating with development teams to identify and resolve issues early in the development process. Adept at utilizing testing frameworks such as JUnit and incorporating continuous integration tools like Jenkins. Skilled in creating and maintaining automated test suites for web and mobile applications. Committed to delivering high-quality software by applying industry best practices in testing and automation. Seeking opportunities to contribute technical expertise and enhance software development processes as an Automation Quality Engineer.
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubheading
+{iPhone Hardware Intern}{Sep. 2022 -- Mar. 2023}
+{Apple Inc.}{Cupertino, CA}
+\resumeItemListStart
+\resumeItem{Developed/executed procedure for setup of development hardware test racks aiding power management system team}
+\resumeItem{Designed/executed experiments for stress testing and characterization of mobile device power management systems}
+\resumeItem{Collaborated across engineering teams to support mission critical failure analysis}
+\resumeItemListEnd
+
+\resumeSubheading
+{Ball Bonder Process Engineering Intern}{Sep. 2021 -- Mar. 2022}
+{Kulicke \& Soffa}{Fort Washington, PA}
+\resumeItemListStart
+\resumeItem{Collected waveform data from piezoelectric transducers and developed data collection workflow for reliability study}
+\resumeItem{Designed feature extraction pipeline in Python for collected data for analysis of damped/undamped behavior}
+\resumeItem{Utilized Python machine learning libraries for waveform classification}
+\resumeItemListEnd
+
+\resumeSubheading
+{STAR Resarch Student}{Mar. 2021 -- Sep. 2021}
+{Drexel University}{Philadelphia, PA}
+\resumeItemListStart
+\resumeItem{Continued Co-op research into machine learning concepts for fabric capacitive touch sensor gesture classification}
+\resumeItem{Communicated with faculty mentor for effective research direction and efficient model development}
+\resumeItem{Presented on findings to peers and research administrators}
+\resumeItemListEnd
+
+\resumeSubheading
+{Junior Manufacturing Assistnant}{Sep. 2020 -- Mar. 2021}
+{Drexel Center For Functional Fabrics}{Philadelphia, PA}
+\resumeItemListStart
+\resumeItem{Implemented machine learning models for gesture classification on fabric capacitive touch sensor}
+\resumeItem{Collaborated with team of computer scientists, electrical \& mechanical engineers for achievement of research timeline}
+\resumeItem{Captured human gesture data for training of sensor touch classification model}
+\resumeItem{Aided daily operation and maintenance of industrial warp and weft knitting machines}
+\resumeItemListEnd
+
+\resumeSubheading
+{Student Informatics Assistant I}{Apr. 2020 -- May 2020}
+{Children's Hospital of Pennsylvania}{Philadelphia, PA}
+\resumeItemListStart
+\resumeItem{Developed algorithms for creation of massive data sets of simulated patient data}
+\resumeItem{Applying cloud based development techniques to stimulate collaboration}
+\resumeItem{Utilizing Python for scripting and statistical analysis}
+\resumeItemListEnd
+
+\resumeSubheading
+{Founder and Owner}{Nov. 2017 -- Present}
+{Your Favorite Grandson}{Philadelphia, PA}
+\resumeItemListStart
+\resumeItem{Provide IT services to senior citizens}
+\resumeItem{Maintain and repair PCs and smartphones}
+\resumeItem{Articulate high-tech concepts to tech-illiterate clients i.e. use of cloud based services, social media and smartphone usage}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%    \resumeSubHeadingListStart
+%      \resumeProjectHeading
+%          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%          \resumeItemListStart
+%            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%            \resumeItem{Visualized GitHub data to show collaboration}
+%            \resumeItem{Used Celery and Redis for asynchronous tasks}
+%          \resumeItemListEnd
+%      \resumeProjectHeading
+%          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%          \resumeItemListStart
+%            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%          \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeEducationSubheading
+{Drexel University}{Philadelphia, PA}
+{BS Computer Engineering}{2024}
+{Minors in Electrical Engineering and Computer Science}{Cumulative GPA: 3.8}
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+
+\section{Relavent Coursework}
+\begin{tasks}(3)
+    \task[] \small{Comp. Organization \& Architecture}
+    \task[] \small{Parallel Computing Architecture}
+    \task[] \small{Machine Learning}
+    \task[] \small{Operating Systems}
+    \task[] \small{Modern Processor Design}
+    \task[] \small{Design with Microcontrollers}
+    \task[] \small{Systems Programming}
+    \task[] \small{VLSI Design}
+    \task[] \small{Design with FPGAs}
+    \task[] \small{Electric Circuits}
+    \task[] \small{Analog Electronics}
+    \task[] \small{Linear Algebra \& Differential Eqns}
+    % \task[] \small{Discrete Math}
+    % \task[] \small{Signals \& Systems}
+    % \task[] \small{FPGA Design}
+    \end{tasks} 
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+                    \textbf{Languages}{: Python (NumPy, Pandas, Matplotlib, Sklearn, TensorFlow), C, C++, Bash, Matlab, VHDL } \\
+                    \textbf{Developer Tools}{: Git, Cadence, Vivando} \\
+                    \textbf{Operating Systems}{: Linux, MacOS, Windows}
+              }}
+\end{itemize}
+
+%-----------Certifications-----------
+% \section{Certifications}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%                     \textbf{Cloud Digital Leader - Google Cloud} \\
+%                     \textit{Issued Sep 2022 - Expires Sep 2025} \\
+%               }}
+% \end{itemize}
+
+%-------------------------------------------
+\end{document}
